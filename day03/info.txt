@@ -1,0 +1,27 @@
+# in this lecture we will be learnig about basic , full stack practice , how full stack is deployed , and basic of how work is done at production 
+
+
+
+//// Why to use axios over using other methods like fetch ???
+
+--> axios are mush stronger than fetch , while fetch is a simple implementation when you just want some data from the api , axios gives u additional features like you can decide what happens when the data is still not arrived , you can add data to it once data reaches etc and other advantages 
+
+
+
+
+
+//--->Servers usually dont accept requests from other ports or other origins , these requests are called cross origins requests , the backend and servers usually have to decide which type of requests to allow and which ones to reject , this is done through a lib called cors , either we ca allow all co requests or we can create a white lists , we can do many other things also , refer cors lib docs for more info 
+
+
+
+
+// while frontend , when we send requests to different servers , we dont write the full url all the time , instead we make a proxy , proxy is just a variable , that holds the address for us of the website where we send the requests , only we write routes together with proxy , tehere is different methods to add proxy , see the documentation to see how they are added 
+
+--> in create-react-app , it is added by adding the proxy to the package.json file 
+
+
+
+//how to solve the issue of cross origin requests :
+1. use proxy servers : since servers only accept requests the same server , use proxy 
+2. use white lists and cors lib 
+3.
